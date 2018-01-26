@@ -6,14 +6,12 @@
   </head>
   <body>
     <div id="result">Loading...</div>
-<center>
     <script>
 $(document).ready(function() {
   $.getJSON('/demo', function(data) {
-    $('#result').html("Hello, " + data.name+" from index.html");
+    $('#result').html("Hello, " + data.name);
   });
 });
     </script>
-</center>
   </body>
 </html>

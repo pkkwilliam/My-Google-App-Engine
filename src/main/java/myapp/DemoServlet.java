@@ -20,6 +20,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.google.gson.Gson;
 
 public class DemoServlet extends HttpServlet {
   @Override
@@ -27,7 +28,14 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     String result = GoogleVision.run();
-    System.out.println(result);
-    resp.getWriter().println("{ \"name\": \"World"+result+"\" }");
+    Test test = new Test(result);
+
+    resp.getWriter().println(new Gson().toJson(test));
   }
+}
+class Test{
+    String name;
+    public Test(String name){
+        this.name = name;
+    }
 }
