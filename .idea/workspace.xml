@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4091d90-172f-4144-837d-be5d2a9c3429" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/appengine_try_java_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/appengine_try_java_war.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/appengine-try-java.iml" afterPath="$PROJECT_DIR$/appengine-try-java.iml" />
+      <change beforePath="$PROJECT_DIR$/External Lib/gson-2.2.2.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/gson-2.2.2.jar" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DemoServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/myapp/DemoServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -35,6 +36,16 @@
                 <element signature="e#1207#1208#0" expanded="true" />
                 <element signature="e#1239#1240#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,6 +143,14 @@
             </path>
             <path>
               <item name="appengine-try-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My-Google-App-Engine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="appengine-try-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -146,9 +165,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -258,12 +283,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516986587801</updated>
-      <workItem from="1516986589036" duration="3607000" />
+      <workItem from="1516986589036" duration="4003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3607000" />
+    <option name="totallyTimeSpent" value="4003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1346" height="701" extended-state="0" />
@@ -345,6 +370,14 @@
             <element signature="e#1207#1208#0" expanded="true" />
             <element signature="e#1239#1240#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
