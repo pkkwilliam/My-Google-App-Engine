@@ -38,7 +38,7 @@ public static String run () throws IOException{
         while (httpResponseScanner.hasNext()) {
             String line = httpResponseScanner.nextLine();
             resp += line;
-            System.out.println(line);  //  alternatively, print the line of response
+            //System.out.println(line);  //  alternatively, print the line of response
         }
         httpResponseScanner.close();
         return resp;
