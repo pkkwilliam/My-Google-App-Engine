@@ -28,6 +28,6 @@ public class DemoServlet extends HttpServlet {
     resp.setContentType("text/plain");
     String result = GoogleVision.run();
     System.out.println(result);
-    resp.getWriter().println("{ \"name\": \"World\" }");
+    resp.getWriter().println("{ \"name\": \"World"+result+"\" }");
   }
 }
