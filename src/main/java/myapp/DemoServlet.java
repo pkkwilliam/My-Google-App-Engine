@@ -27,7 +27,8 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     String result = GoogleVision.run();
-    resp.getWriter().println("{ \"name\": \""+result+"\" }");
+    System.out.println(result);
+    resp.getWriter().println("{ \"name\": \"World\" }");
   }
   private String getString(){
     return "DUDE HOW TO IMPORT IMAGE";
