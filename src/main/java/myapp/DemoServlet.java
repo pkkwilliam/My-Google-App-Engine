@@ -26,6 +26,10 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
-    resp.getWriter().println("{ \"name\": \"From Java Class\" }");
+    String result = getString();
+    resp.getWriter().println("{ \"name\": "+result+"");
+  }
+  private String getString(){
+    return "DUDE HOW TO IMPORT IMAGE";
   }
 }
