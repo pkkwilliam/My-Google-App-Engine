@@ -10,7 +10,7 @@
     <script>
         var link = prompt("Please Paste Image Link");
 $(document).ready(function() {
-  $.getJSON('/demo?id=link', function(data) {
+  $.getJSON('/demo?id='+link+'', function(data) {
       var text = "</br>";
       var i;
       for(i = 0; i < 5; i++){
