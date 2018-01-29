@@ -9,10 +9,9 @@
 
     <script>
         var link = prompt("Please Paste Image Link");
-        alert(link);
 $(document).ready(function() {
-  $.getJSON('/demo?link=haha', function(data) {
-      var text = "";
+  $.getJSON('/demo?id=link', function(data) {
+      var text = "</br>";
       var i;
       for(i = 0; i < 5; i++){
           text += "Score: "+data.responses[0].webDetection.webEntities[i].score+" Label: "+data.responses[0].webDetection.webEntities[i].description;

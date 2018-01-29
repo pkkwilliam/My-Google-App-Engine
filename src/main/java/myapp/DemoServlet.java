@@ -27,12 +27,10 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     // Request image link
-    String link = req.getParameter("link");
-    System.out.println(link);
-    link = "http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-6.jpg";
-    String result = GoogleVision.run(link);
+    String id = req.getParameter("id");
+    System.out.println(id);
+    id = "http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-6.jpg";
+    String result = GoogleVision.run(id);
     resp.getWriter().println(result);
-
-
   }
 }
