@@ -31,5 +31,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-testing:1.9.54" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-api-stubs:1.9.54" level="project" />
     <orderEntry type="library" scope="TEST" name="gson-2.2.2" level="project" />
+    <orderEntry type="library" name="gson-2.2.2" level="project" />
   </component>
 </module>
