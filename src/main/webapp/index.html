@@ -8,13 +8,14 @@
     <div id="result">Loading...</div>
 
     <script>
+        var link = prompt("Please Paste Image Link");
 $(document).ready(function() {
-  $.getJSON('/demo', function(data) {
+  $.getJSON('/demo?id=5', function(data) {
       var text = "";
       var i;
       for(i = 0; i < 5; i++){
           text += "Score: "+data.responses[0].webDetection.webEntities[i].score+" Label: "+data.responses[0].webDetection.webEntities[i].description;
-          text += "\n";
+          text += "</br>";
       }
 
     $('#result').html("Image Recognition:\n " + text);
