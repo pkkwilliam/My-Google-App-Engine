@@ -26,8 +26,10 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
+    // Request image link
     String link = req.getParameter("link");
     System.out.println(link);
+
     String result = GoogleVision.run(link);
     resp.getWriter().println(result);
 
