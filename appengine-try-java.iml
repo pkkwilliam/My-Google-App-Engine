@@ -32,7 +32,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-testing:1.9.54" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.google.appengine:appengine-api-stubs:1.9.54" level="project" />
     <orderEntry type="module-library">
-      <library name="Maven: com.google.gson.Gson:gson-2.2.2.jar:2.2.2">
+      <library name="Maven: com.google.gson:gson-2.2.2.jar:2.2.2">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/src/main/resources/gson-2.2.2.jar!/" />
         </CLASSES>
