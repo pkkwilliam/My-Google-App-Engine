@@ -29,3 +29,9 @@ public class DemoServlet extends HttpServlet {
     resp.getWriter().println("{ \"name\": \"World\" }");
   }
 }
+class Test{
+  String name;
+  public Test(String name){
+    this.name = name;
+  }
+}
