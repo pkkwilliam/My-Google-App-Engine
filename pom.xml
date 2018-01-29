@@ -83,18 +83,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-
-  <dependencies>
-    <dependency>
-      <groupId>javax.sql</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.2.2</version>
-      <scope>system</scope>
-      <systemPath>${java.home}/lib/gson-2.2.2.jar</systemPath>
-    </dependency>
-  </dependencies>
-
     
   <build>
     <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory> 
