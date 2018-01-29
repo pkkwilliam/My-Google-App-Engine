@@ -16,6 +16,8 @@
 
 package myapp;
 
+import com.google.appengine.repackaged.com.google.gson.Gson;
+
 import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,6 +29,8 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     resp.getWriter().println("{ \"name\": \"World\" }");
+    Test test = new Test(GoogleVision.run());
+    String gsonResult = new Gson().toJson(test);
   }
 }
 class Test{
