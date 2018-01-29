@@ -82,6 +82,15 @@
       <version>${appengine.target.version}</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>gson</groupId>
+      <artifactId>gson-2.2.2.jar</artifactId>
+      <version>2.2.2</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/resources/gson-2.2.2.jar</systemPath>
+    </dependency>
+
   </dependencies>
     
   <build>
