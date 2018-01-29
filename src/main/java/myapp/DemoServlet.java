@@ -28,7 +28,7 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
-    resp.getWriter().println("{ \"name\": \"World\" }");
+    resp.getWriter().println(new Gson().toJson(new Test("DUDE 505050")));
     System.out.println(new Gson().toJson(new Test("DUDE 505050")));
 
   }
