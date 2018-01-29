@@ -16,7 +16,8 @@
 
 package myapp;
 
-import com.google.appengine.repackaged.com.google.gson.Gson;
+
+import com.google.gson.Gson;
 
 import java.io.IOException;
 import javax.servlet.http.HttpServlet;
