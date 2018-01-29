@@ -24,7 +24,7 @@ public class GoogleVision {
         BufferedWriter httpRequestBodyWriter = new BufferedWriter(new
                 OutputStreamWriter(httpConnection.getOutputStream()));
         httpRequestBodyWriter.write
-                ("{\"requests\":  [{ \"features\":  [ {\"type\": \"LABEL_DETECTION\""
+                ("{\"requests\":  [{ \"features\":  [ {\"type\": \"WEB_DETECTION\""
                         +"}], \"image\": {\"source\": { \"imageUri\":"
                         +" \""+imageURL+"\"}}}]}");
         httpRequestBodyWriter.close();

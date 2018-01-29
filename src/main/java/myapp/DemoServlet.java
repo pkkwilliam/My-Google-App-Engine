@@ -32,14 +32,14 @@ public class DemoServlet extends HttpServlet {
     String result = GoogleVision.run("http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-10.jpg");
     System.out.println(result);
 
-    resp.getWriter().println(new Gson().toJson(new Test("DUDE 505050")));
-    System.out.println(new Gson().toJson(new Test("DUDE 505050")));
+    resp.getWriter().println(new Gson().toJson(new Test("DUDE 505050","DUDE $)$)$)$)")));
+    System.out.println(new Gson().toJson(new Test("DUDE 505050","DUDE12312")));
 
   }
 }
 class Test{
   String responses;
-  public Test(String responses){
+  public Test(String responses, String webDetection){
     this.responses = responses;
   }
 }
