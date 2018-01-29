@@ -31,6 +31,7 @@ public class DemoServlet extends HttpServlet {
     resp.getWriter().println("{ \"name\": \"World\" }");
     Test test = new Test(GoogleVision.run());
     String gsonResult = new Gson().toJson(test);
+    resp.getWriter().println(gsonResult);
   }
 }
 class Test{
