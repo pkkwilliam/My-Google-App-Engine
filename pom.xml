@@ -83,6 +83,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <dependency>
+    <groupId>com.google.gson</groupId>
+    <artifactId>gson-2.2.2</artifactId>
+    <version>2.2.2</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/src/main/resources/gson2.2.2.jar</systemPath>
+  </dependency>
     
   <build>
     <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory> 
