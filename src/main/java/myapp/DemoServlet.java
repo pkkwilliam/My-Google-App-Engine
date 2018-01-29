@@ -16,7 +16,6 @@
 
 package myapp;
 
-
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -30,9 +29,8 @@ public class DemoServlet extends HttpServlet {
       throws IOException {
     resp.setContentType("text/plain");
     resp.getWriter().println("{ \"name\": \"World\" }");
-    Test test = new Test(GoogleVision.run());
-    String gsonResult = new Gson().toJson(test);
-    resp.getWriter().println(gsonResult);
+    resp.getWriter().println(new Gson().toJson(new Test("DUDE51")));
+
   }
 }
 class Test{
