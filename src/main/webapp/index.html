@@ -10,7 +10,7 @@
     <script>
 $(document).ready(function() {
   $.getJSON('/demo', function(data) {
-    $('#result').html("Image Recognition, " + data.responses.webDetection.webEntities[0].description);
+    $('#result').html("Image Recognition, " + data.responses[0].webDetection.webEntities[0].description);
   });
 });
     </script>
