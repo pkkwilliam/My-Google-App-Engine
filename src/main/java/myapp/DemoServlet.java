@@ -29,7 +29,7 @@ public class DemoServlet extends HttpServlet {
     // Request image link
     String link = req.getParameter("link");
     System.out.println(link);
-
+    link = "http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-6.jpg";
     String result = GoogleVision.run(link);
     resp.getWriter().println(result);
 
