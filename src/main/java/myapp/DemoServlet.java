@@ -28,14 +28,18 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
+
+    String result = GoogleVision.run("http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-10.jpg");
+    System.out.println(result);
+
     resp.getWriter().println(new Gson().toJson(new Test("DUDE 505050")));
     System.out.println(new Gson().toJson(new Test("DUDE 505050")));
 
   }
 }
 class Test{
-  String name;
-  public Test(String name){
-    this.name = name;
+  String responses;
+  public Test(String responses){
+    this.responses = responses;
   }
 }
