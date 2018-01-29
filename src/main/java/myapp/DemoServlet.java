@@ -20,26 +20,12 @@ import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.google.gson.Gson;
 
 public class DemoServlet extends HttpServlet {
   @Override
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
-
-    // Run class GoogleVision and retrieve image label.
-    String result = GoogleVision.run();
-    // create a class call Test in order to create JSON
-    Test test = new Test(result);
-
-    //resp.getWriter().println(new Gson().toJson(test));
-      resp.getWriter().println("{ \"name\": \"World\" }");
+    resp.getWriter().println("{ \"name\": \"World\" }");
   }
-}
-class Test{
-    String name;
-    public Test(String name){
-        this.name = name;
-    }
 }
