@@ -26,9 +26,9 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
-    String get = req.getParameter("id");
-    System.out.println(get);
-    String result = GoogleVision.run("http://cdn2-www.dogtime.com/assets/uploads/gallery/golden-retriever-dogs-and-puppies/golden-retriever-dogs-puppies-10.jpg");
+    String link = req.getParameter("link");
+    System.out.println(link);
+    String result = GoogleVision.run(link);
     resp.getWriter().println(result);
 
 
