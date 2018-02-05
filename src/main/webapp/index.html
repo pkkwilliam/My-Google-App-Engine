@@ -1,17 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>App Engine Demo</title>
+    <title>App Engine Alpha Test</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
     <div id="result">Loading...</div>
 
     <script>
-        var link = prompt("Please Paste Image Link");
+        var link = prompt("Image Link\n" +
+            "Please be aware the format of the link\n" +
+            "Link should start with 'http://' and end with an image document type'");
 $(document).ready(function() {
     var imageLink = '/demo?id='+link;
-    alert(imageLink);
   $.getJSON(imageLink, function(data) {
       var text = "</br>";
       var i;
