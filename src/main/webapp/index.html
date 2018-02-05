@@ -8,9 +8,10 @@
     <div id="result">Loading...</div>
 
     <script>
-        var link = prompt("Image Link\n" +
+        var link = prompt("Please Paste An Image Link\n" +
             "Please be aware the format of the link\n" +
-            "Link should start with 'http://' and end with an image document type'");
+            "Link should start with 'http://' and end with an image document type ex: http://image.com/dog.jpg'\n" +
+            "Alpha Testing");
 $(document).ready(function() {
     var imageLink = '/demo?id='+link;
   $.getJSON(imageLink, function(data) {
